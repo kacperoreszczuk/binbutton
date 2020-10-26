@@ -266,7 +266,7 @@ void Widget::flatten()
     {
         for( int j = dataBeginColumn + 1; j < dataBeginColumn + firstRowLength; j++)
         {
-            inputData[i][1] += inputData[i][j];
+            inputData[i][dataBeginColumn] += inputData[i][j];
         }
         inputData[i].resize(dataBeginColumn + 1);
     }
