@@ -1,5 +1,5 @@
 # binbutton
-Qt-based app for operations on data in the clipboard. Designed to aid in quick transformations of scientific data such as spectra or two-dimensional maps.
+App for operations on data in the clipboard. Designed to aid in quick transformations of scientific data such as spectra or two-dimensional maps.
 
 Data format:
 - plain text format
@@ -14,7 +14,9 @@ Features:
 - transpose data matrix or row/column
 - flatten data matrix (sum all columns to one)
 - reverse row order
-- perform operations on two datasets. One dataset (called background here) can be saved to separate buffer. Then, data in clipboard can be dividedar multiplied by background or it can have background added or subtracted. App will try to resolve cases, when background has other dimensions than data (f. eg. when subtracting single column background from 2D data matrix)
+- perform operations on two datasets. One dataset (called background here) can be saved to separate buffer. Then, data in clipboard can be divided or multiplied by background or it can have background added to or subtracted from. App will try to resolve cases, when background has different dimensions than data (f. eg. when subtracting single column background from 2D data matrix)
 - two text areas user can temporarily paste his data into
 - always-on-top behavior, hides into taskbar when closed
 - support for custom physical keyboard operating via serial port
+
+App uses Qt 5.15.1 framework under GNU Lesser General Public License (LGPL) version 3.
